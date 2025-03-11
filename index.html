@@ -7,17 +7,45 @@
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
             color: white;
+            padding: 50px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         #wow-academy {
-            font-size: 2em;
+            font-size: 3.5em;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            transition: color 0.5s;
         }
         .role {
-            font-size: 1.5em;
+            font-size: 1.8em;
             font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            width: 60%;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        #founder {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        #ceo {
+            background-color: #4caf50;
+            color: white;
+        }
+        #vp {
+            background-color: #1e90ff;
+            color: white;
         }
     </style>
 </head>
@@ -34,9 +62,6 @@
         
         function changeColors() {
             document.getElementById("wow-academy").style.color = getRandomColor();
-            document.getElementById("founder").style.color = "red";
-            document.getElementById("ceo").style.color = "green";
-            document.getElementById("vp").style.color = "blue";
         }
         
         setInterval(changeColors, 500);
